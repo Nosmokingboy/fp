@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20161013160501) do
     t.string   "title"
     t.text     "description"
     t.integer  "minimum_order"
+    t.string   "material"
     t.string   "print_technique"
     t.integer  "number_of_colors"
     t.string   "varnish_technique"

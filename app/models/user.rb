@@ -9,17 +9,17 @@ class User < ApplicationRecord
   validates :firstname, presence: true
   validates :lastname, presence: true
   validates :firstname, uniqueness: { scope: :lastname }
-  validates :factory
-  validates :company_name
-  validates :address
-  validates :zipcode
-  validates :city
-  validates :country
-  validates :activity_field
-  validates :job_title
-  validates :phone_number
-  validates :mobile_number
-  validates :company_revenues
+  validates :factory, presence: true
+  validates :company_name, presence: true
+  validates :address, presence: true
+  validates :zipcode, presence: true
+  validates :city, presence: true
+  validates :country, presence: true
+  validates :activity_field, presence: true
+  validates :job_title, presence: true
+  validates :phone_number, presence: true
+  validates :mobile_number, presence: true
+  validates :company_revenues, presence: true
 
   def name
     "#{firstname} #{lastname}"
